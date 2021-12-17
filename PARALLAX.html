@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://freepngimg.com/thumb/sonic_the_hedgehog/28106-1-sonic-the-hedgehog-logo-picture.png" type="image/x-icon">
+    <title>Sanic Hagenhof</title>
+    <link rel="stylesheet" href="PARALLAX.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="background">
+        <img src="video/backgroundswag.png" class="bckg" id="bckg" />
+        <img src="video/SANIC.png" id="sanic" />
+      </div>
+    </section>
+    <p class="text"> 
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint at quam
+      fuga repellat beatae debitis delectus aut optio voluptate earum, nihil
+      illum, expedita quia odit. A corporis ex impedit tempore.
+    </p>
+
+    <script>
+      $(document).ready(function () {
+        let scrollObject = document.getElementById("sanic");
+        let scrollObjectHeight = 980;
+        let scrollObjectWidth = 980;
+
+        window.addEventListener("scroll", () => {
+          
+          scrollObject.style.transform=`rotate(${window.pageYOffset}deg)`;
+
+          scrollObject.style.width = `${
+            scrollObjectWidth - window.pageYOffset * 1.5
+          }px`;
+          scrollObject.style.height = `${
+            scrollObjectHeight - window.pageYOffset * 1.5
+          }px`;
+
+          scrollObject.style.left = `${window.pageYOffset * 4.5}px`;
+        });
+      });
+    </script>
+  </body>
+</html>

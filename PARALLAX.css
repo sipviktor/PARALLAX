@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(rgb(85, 85, 241), rgb(1, 1, 150));
+    overflow-x: hidden;
+
+}
+
+section{
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+section img{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sanic{
+    width: 50%;
+}
+
+.text{
+    display: grid;
+    margin-top: 30rem;
+}
